@@ -109,7 +109,7 @@ int main(int argc, char ** argv) {
   kfun<<<dim3 GRID_SZ, dim3 BLOCK_SZ>>> (<param_list>);
   ```
 
-* grid size \(number of blocks\): \(gx, gy, gz\)
+  * grid size \(number of blocks\): \(gx, gy, gz\)
 
   * block size\(number of threads\/block\): \(bx, by, bz\)
 
