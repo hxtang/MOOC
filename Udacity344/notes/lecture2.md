@@ -18,7 +18,7 @@
 
 ###GPU hardware
 
-![](/images/Lec2_GPU_HW.png)
+![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec2_GPU_HW.png)
 
 * GPU: a bunch of streaming(SM) processors
 
