@@ -1,21 +1,24 @@
 #include "reference_calc.cpp"
 #include "utils.h"
 
-__global__ void predicator(unsigned int* const d_output, unsigned int* d_inputV, size_t len, int bit_id) {
+__global__ void predicator(unsigned int* const d_output, unsigned int* d_inputV, size_t len, int bit_id) 
+{
     int id = threadIdx.x + blockIdx.x * blockDim.x;
     if (id >= len) return;
     d_output[id] = ((d_inputV[id] >> bit_id) & 1);
     assert(d_output[id] ==0 || d_output[id]==1);
 }
 
-__global__ void flip(unsigned int *d_input, int len) {
+__global__ void flip(unsigned int *d_input, int len) 
+{
 	int id = threadIdx.x + blockIdx.x * blockDim.x;
     if (id >= len) return;
     d_input[id] = 1-d_input[id];
     assert(d_input[id]==0 || d_input[id] ==1);
 }
 
-__global__ void scanEx(unsigned int* const d_output, unsigned int* d_input, unsigned int* d_offset, int len) {
+__global__ void scanEx(unsigned int* const d_output, unsigned int* d_input, unsigned int* d_offset, int len) 
+{
 	extern __shared__ float sdata[];
 	int tid = threadIdx.x, bid = blockIdx.x, N = blockDim.x*2, base = bid*N;
 	
@@ -84,7 +87,8 @@ void merge(  unsigned int* const d_outputV, unsigned int* const d_outputP,
 	d_outputP[index] = d_inputP[id];	
 }
 
-inline unsigned int next_power_of_two(unsigned int v) {
+inline unsigned int next_power_of_two(unsigned int v) 
+{
     --v;
     v |= (v >> 1);
     v |= (v >> 2);
@@ -118,7 +122,8 @@ void your_sort(unsigned int* const d_inputVals,
     cudaMemcpy(d_interVals, d_inputVals, numElems * sizeof(unsigned int), cudaMemcpyDeviceToDevice);
     cudaMemcpy(d_interPos,  d_inputPos,  numElems * sizeof(unsigned int), cudaMemcpyDeviceToDevice);
 
-    for (int k = 0; k < 8 * sizeof(unsigned int); ++k) {
+    for (int k = 0; k < 8 * sizeof(unsigned int); ++k) 
+	{
 		predicator<<<GSZ, BSZ>>>(d_pred, d_interVals, numElems, k);
 
 		//compute local indices
