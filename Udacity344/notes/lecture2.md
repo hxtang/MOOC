@@ -18,6 +18,8 @@
 
 ###GPU hardware
 
+![](/images/Lec2_GPU_HW.jpg)
+
 * GPU: a bunch of streaming(SM) processors
 
 * SM <-> thread block (cuda makes little assumption about where or when to run TB)
