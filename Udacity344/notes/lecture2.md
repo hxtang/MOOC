@@ -18,7 +18,7 @@
 
 ###GPU hardware
 
-![](/images/Lec2_GPU_HW.jpg)
+![](/images/Lec2_GPU_HW.png)
 
 * GPU: a bunch of streaming(SM) processors
 
