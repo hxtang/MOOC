@@ -1,3 +1,4 @@
-# My Awesome Book
+# Note
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Notes for Udacity course CS344: Introduction to parallel programming
+
