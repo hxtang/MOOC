@@ -18,7 +18,7 @@
 
 ###GPU hardware
 
-![](/images/Lec2_GPU_HW.jpg)
+![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec2_GPU_Hardware.png)
 
 * GPU: a bunch of streaming(SM) processors
 
@@ -41,6 +41,8 @@ Pros and Cons of CUDA
   * no communication among blocks
 
 ###Memory model
+
+![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec2_GPU_Hardware.png)
 
 * global memory is shared by all blocks
 
