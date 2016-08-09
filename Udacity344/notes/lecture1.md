@@ -1,17 +1,19 @@
 # Lecture 1    The GPU programming model
 
-### **GPU trades simple control for power-efficiency \/ throughput**
+### GPU trades simple control for power-efficiency / throughput
 
 * Consequence of simple ctrl: restrictive programming model
 
-### **CUDA programming model**
+### CUDA programming model
+
+![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec1_programming_model.png)
 
 * CPU initiates all requests, GPU only does the job
 
 * Maximize amount of computation\/communication
 
 
-### **A "hello world" example**
+### A "hello world" example
 
 **compile：**nvcc -o cube cube.cu
 
