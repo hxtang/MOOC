@@ -30,7 +30,7 @@
 
 * Free space
 
-**GPU part: **\_\_global\_\_ void cube\(float \* d\_out, float \* d\_in\)
+**GPU part:** \_\_global\_\_ void cube\(float \* d\_out, float \* d\_in\)
 
 * Use ThreadIdx, BlockDim, BlockIdx, to determine what to compute
 
