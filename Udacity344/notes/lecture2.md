@@ -62,7 +62,7 @@ __syncthreads();
 
 ```
 
-**Atomic ops: **
+**Atomic ops:**
 
 ```c
 
