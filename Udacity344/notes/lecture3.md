@@ -35,8 +35,11 @@ Output:
 **Algorithms:**
 
 * **Hills & Steels:** O(nlogn) work, logn steps, good when processors much more than work
-* **Blellock:** O(n) work, 2logn steps, good when work much more than processors
+
 ![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec3_Hills_Steels.png "Hills and Steels")
+
+* **Blellock:** O(n) work, 2logn steps, good when work much more than processors
+
 ![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec3_Blellock.png "Blellock")
 
 ###Histogram
