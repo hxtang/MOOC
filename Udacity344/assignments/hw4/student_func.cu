@@ -32,8 +32,10 @@ __global__ void scanEx(unsigned int* const d_output, unsigned int* d_input, unsi
     int offset = 1, last = sdata[N-1];
     
     // down scan
-	for (int d = N/2; d > 0; d = d/2) {
-		if (tid < d) {
+	for (int d = N/2; d > 0; d = d/2) 
+	{
+		if (tid < d) 
+		{
 			int i1 = offset*(2*tid+1)-1;
 			int i2 = offset*(2*tid+2)-1;
 			sdata[i2] += sdata[i1];
@@ -46,10 +48,12 @@ __global__ void scanEx(unsigned int* const d_output, unsigned int* d_input, unsi
 	__syncthreads();	
 
     //up scan
-	for (int d = 1; d<=N/2; d = d*2) {
+	for (int d = 1; d<=N/2; d = d*2) 
+	{
 		offset /= 2;
 
-		if (tid < d) {
+		if (tid < d) 
+		{
 			int i1 = offset*(2*tid+1)-1;
 			int i2 = offset*(2*tid+2)-1;
 			unsigned int tmp = sdata[i1];
@@ -74,7 +78,8 @@ void merge(  unsigned int* const d_outputV, unsigned int* const d_outputP,
 			 unsigned int* const d_pred,
              unsigned int* const d_index0, unsigned int* const d_index1,
 			 unsigned int* const d_offset0, unsigned int* const d_offset1,
-			 unsigned int* const d_count, unsigned int len) {
+			 unsigned int* const d_count, unsigned int len) 
+{
     int id = threadIdx.x + blockIdx.x * blockDim.x;
     if (id >= len) return;
     
