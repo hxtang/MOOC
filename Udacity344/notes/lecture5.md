@@ -98,7 +98,10 @@ How to affect occupancy
 **maximize useful computation/second**
 
 * Minimize time waiting at barriers
-* Minimize thread divergence: avoid branchy code, esp; avoid adjacent threads to take different paths; avoid large imbalance in thread workloads (loops, recursive calls)
+* Minimize thread divergence: 
+  * avoid branchy code, esp; 
+  * avoid adjacent threads to take different paths; 
+  * avoid large imbalance in thread workloads (loops, recursive calls)
 
 **Warp:** set of threads that executes the same instruction at a time
 
