@@ -6,7 +6,7 @@
 
 ### CUDA programming model
 
-![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec1_programming_model.png)
+![](/Udacity344/notes/images/Lec1_programming_model.png)
 
 * CPU initiates all requests, GPU only does the job
 
