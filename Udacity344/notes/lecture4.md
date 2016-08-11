@@ -4,7 +4,7 @@
 
 ### Compact (filter)
 
-e.g. 1, 2, 3, 4, 5, 6, 7-&gt;2, 4, 6 ("filter" even numbers)
+e.g. 1, 2, 3, 4, 5, 6, 7 -> 2, 4, 6 ("filter" even numbers)
 
 **Algorithm:**
 
@@ -77,7 +77,7 @@ Each output bin size is less than sum of bin size in the two list
 
 Example:
 
-![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec4_merge.png)
+![](/Udacity344/notes/images/Lec4_merge.png)
 
 ### Sorting network
 
@@ -85,7 +85,7 @@ Example:
 
 Example: (sorting 8 numbers)
 
-![](https://github.com/hxtang/MOOC/blob/Udacity344/Udacity344/notes/images/Lec4_sorting_network.png)
+![](/Udacity344/notes/images/Lec4_sorting_network.png)
 
 Idea: assume two lists l1, l2 are sorted, then [l1, l2] is bitonic sequence (i.e. direction only changes at most once)
 
