@@ -106,10 +106,10 @@ Allow kernel to launch kernel
 * Task paralleism: call different tasks in parallel inside a parallel function
 * Recursive parallelism: e.g. quicksort
 
-**Programming model:** just the same as launching kernel on CPU
+###Programming model
+just the same as launching kernel on CPU
 
-**Things to watch out for**
-
+###Things to watch out for
 * Every thread executes the same program (lots of launches) - may want to launch only in one of the threads
 * Each block executes independently - shared memory are private to locks
 * A Block's private data is private - stream/events are private to blocks and cannot be passed to children
